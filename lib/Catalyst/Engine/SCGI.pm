@@ -8,7 +8,7 @@ eval "use SCGI";
 die "Please install SCGI\n" if $@;
 use IO::Socket;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 

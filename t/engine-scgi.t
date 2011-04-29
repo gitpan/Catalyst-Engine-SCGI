@@ -15,10 +15,10 @@ scgi_application_prefix: {
     $ENV{SCRIPT_NAME} = '/MyApp';
     $ENV{PATH_INFO} = '/some/path';
 
+    Catalyst->setup_engine('SCGI');
     my $c = Catalyst->new({
       request => $request,
     });
-    $c->setup_engine('SCGI');
     $c->prepare_path;
 
     is (

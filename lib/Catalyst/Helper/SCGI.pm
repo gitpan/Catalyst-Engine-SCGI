@@ -5,7 +5,7 @@ use strict;
 use Config;
 use File::Spec;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 
@@ -17,7 +17,7 @@ Catalyst::Helper::SCGI - SCGI helper to create a scgi runner script to run the S
 
 use the helper to build the view module and associated templates.
 
-	$ script/myapp_create.pl SCGI -p 9000
+	$ script/myapp_create.pl SCGI
 	
 =head1 DESCRIPTION
 
